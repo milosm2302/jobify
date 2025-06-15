@@ -11,7 +11,7 @@ export const loader = async () => {
     const response = await customFetch.get("/users/admin/app-stats");
     return response.data;
   } catch (error) {
-    toast.error("you are npot authorized");
+    toast.error("you are not authorized");
     return redirect("/dashboard");
   }
 };
